@@ -43,7 +43,8 @@ git push origin main
 ```
 
 
-
+### we will first implement all the project in our jupitar notebook then we will convert it into modular coding.
+### go to research/trials.ipynb and select the python envirnment we created and start implementing the project.
 ### Create a `.env` file in the root directory and add your Pinecone & openai credentials as follows:
 
 ```ini
@@ -52,20 +53,23 @@ OPENAI_API_KEY = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 ```
 
 
+
+
+
+###
+### Now to run this all in Modular coding we first need to copy fucntions from research/trials.ipynb to helper.py and prompt to prompt.py
+### Next create store_index.py which will create the embeddings and push the embeddings to the pinecone vector database
+###
 ```bash
 # run the following command to store embeddings to pinecone
 python store_index.py
 ```
 
+### Finally run the following command which will create web server on localhost:8080
 ```bash
-# Finally run the following command
 python app.py
 ```
-
-Now,
-```bash
-open up localhost:
-```
+### in browser write localhost:8080 and check 
 
 
 ### Techstack Used:
